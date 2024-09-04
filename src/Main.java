@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -72,16 +74,19 @@ public class Main {
 
 //        System.out.println("Введите число");
 //        int num = scanner.nextInt();
-//        int i = 4;
 //        boolean prime = true;
-//        while (i < num/2)
+//        for (int i = 2; i < num; i++)
 //        {
-//            if (num % i != 0)
+//            if (num == 1)
 //            {
 //                prime = false;
 //                break;
 //            }
-//            i++;
+//            if (num % i == 0)
+//            {
+//                prime = false;
+//                break;
+//            }
 //        }
 //        if (prime)
 //        {
@@ -139,6 +144,201 @@ public class Main {
 //        System.out.println("Введите число");
 //        String num = scanner.nextLine();
 //        System.out.println("Количество цифр в числе " + num + " - " + num.length());
+
+        // Задача 11: Факториал числа
+        // Условие:
+        // Пользователь вводит целое число N. Программа должна вычислить факториал этого числа (N!)
+
+//        System.out.println("Введите число");
+//        int N = scanner.nextInt();
+//        long factorial = 1;
+//        for (int i = 1; i < N+1; i ++)
+//        {
+//            factorial *= i;
+//        }
+//        System.out.println("Факториал числа " + N + " равен " + factorial);
+
+        // Задача 12: Сумма цифр числа
+        // Условие:
+        // Пользователь вводит целое число. Программа должна найти сумму всех цифр этого числа.
+
+//        System.out.println("Введите число");
+//        int num = scanner.nextInt();
+//        int sumnum = 0;
+//        while (num > 0)
+//        {
+//            sumnum += num%10;
+//            num /= 10;
+//        }
+//        System.out.println("Сумма всех цифр введеного 12числа - " + sumnum);
+
+        // Задача 13: Палиндром
+        // Условие:
+        // Пользователь вводит строку. Программа должна проверить, является ли эта строка палиндромом (читается одинаково слева направо и справа налево).
+
+//        System.out.println("Введите строку");
+//        String str = scanner.nextLine().toLowerCase(Locale.ROOT);
+//        boolean pol = true;
+//        for (int i = 0; i < str.length()/2; i++)
+//        {
+//            if (str.charAt(i) != str.charAt(str.length() - i - 1))
+//            {
+//                pol = false;
+//                break;
+//            }
+//        }
+//
+//        if (pol)
+//        {
+//            System.out.println("Строка - палиндром");
+//        }
+//        else
+//        {
+//            System.out.println("Строка - не палиндром");
+//        }
+
+        // Задача 14: Найти максимальное число в массиве
+        // Условие:
+        // Пользователь вводит размер массива и элементы массива. Программа должна найти и вывести максимальное число в массиве.
+
+//        System.out.println("Введите размер массива");
+//        int ras = scanner.nextInt();
+//        int[] mas = new int[ras];
+//        System.out.println("Введите элементы массива");
+//        for (int i = 0; i < ras; i++)
+//        {
+//            mas[i] = scanner.nextInt();
+//        }
+//        System.out.println("Максимальный элемент массива - " + Arrays.stream(mas).max().getAsInt());
+
+        // Задача 15: Сумма всех элементов массива
+        // Условие:
+        // Пользователь вводит размер массива и его элементы. Программа должна вычислить и вывести сумму всех элементов массива.
+
+//        System.out.println("Введите размер массива");
+//        int ras = scanner.nextInt();
+//        int sum = 0;
+//        System.out.println("Введите элементы массива");
+//        for (int i = 0; i < ras; i++)
+//        {
+//            sum += scanner.nextInt();
+//        }
+//        System.out.println("Сумма элементов массива - " + sum);
+
+        // Задача 16: Количество положительных и отрицательных чисел
+        // Условие:
+        // Пользователь вводит размер массива и его элементы. Программа должна подсчитать и вывести количество положительных и отрицательных чисел в массиве.
+
+//        System.out.println("Введите размер массива");
+//        int ras = scanner.nextInt();
+//        int[] mas = new int[ras];
+//        int otr = 0, pol = 0;
+//        System.out.println("Введите элементы массива");
+//        for (int i = 0; i < ras; i++)
+//        {
+//            mas[i] = scanner.nextInt();
+//            if (mas[i] > 0)
+//            {
+//                pol += 1;
+//            }
+//            if (mas[i] < 0)
+//            {
+//                otr += 1;
+//            }
+//        }
+//        System.out.println("В массиве " + pol + " положительных и " + otr + " отрицательных чисел");
+
+        // Задача 17: Простые числа в диапазоне
+        // Условие:
+        // Пользователь вводит два целых числа A и B. Программа должна вывести все простые числа в этом диапазоне (включительно).
+
+//        System.out.println("Введите первое число (А)");
+//        int A = scanner.nextInt();
+//        System.out.println("Введите первое число (В)");
+//        int B = scanner.nextInt();
+//        System.out.println("Простые числа:");
+//        for (int i = A; i < B+1; i++)
+//        {
+//            boolean prime = true;
+//            if (i == 1)
+//            {
+//                prime = false;
+//            }
+//            else
+//            {
+//                for (int j = 2; j < i; j++) {
+//                    if (i % j == 0) {
+//                        prime = false;
+//                        break;
+//                    }
+//                }
+//            }
+//            if (prime)
+//            {
+//                System.out.println(i);
+//            }
+//        }
+
+        // Задача 18: Подсчет гласных и согласных в строке
+        // Условие:
+        // Пользователь вводит строку. Программа должна подсчитать и вывести количество гласных и согласных букв в этой строке.
+
+//        System.out.println("Введите строку");
+//        String str = scanner.nextLine();
+//        int gl = 0, sog = 0;
+//        String glr = "аеёиоуыэюя";
+//        for (int i = 0; i < str.length(); i++)
+//        {
+//            for (int j = 0; j < glr.length(); j++)
+//            {
+//                if (glr.charAt(j) == str.charAt(i))
+//                {
+//                    gl += 1;
+//                    break;
+//                }
+//                if (j == glr.length()-1 & glr.charAt(j) != str.charAt(i))
+//                {
+//                    sog += 1;
+//                }
+//            }
+//        }
+//        System.out.println("Гласных - " + gl + "\nСогласных - " + sog);
+
+        // Задача 19: Перестановка слов в строке
+        // Условие:
+        // Пользователь вводит строку, состоящую из нескольких слов. Программа должна вывести слова в обратном порядке.
+
+//        System.out.println("Введите строку");
+//        String[] str = scanner.nextLine().split(" ");
+//        for (int i = str.length-1; i > -1; i--)
+//        {
+//            System.out.print(str[i] + " ");
+//        }
+//        System.out.println();
+
+        // Задача 20: Число Армстронга
+        // Условие:
+        // Пользователь вводит целое число. Программа должна проверить, является ли это число числом Армстронга
+        // (сумма цифр в степени, равной количеству цифр, равна самому числу).
+
+//        System.out.println("Введите число");
+//        String str = scanner.next();
+//        int num = Integer.parseInt(str);
+//        int sum = 0;
+//        for (int i = 0; i < str.length(); i++)
+//        {
+//            int num1 = num%10;
+//            sum += Math.pow(num1,str.length());
+//            num = num/10;
+//        }
+//        if (sum == Integer.parseInt(str))
+//        {
+//            System.out.println("Число Армстронга");
+//        }
+//        else
+//        {
+//            System.out.println("не число Армстронга");
+//        }
     }
 }
 
